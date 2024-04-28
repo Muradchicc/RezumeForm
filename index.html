@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Form Example</title>
+<link rel="stylesheet" href="css/Google sheet.css">
+</head>
+<body>
+<div class="form-container">
+
+  <h2>So'rovnomani to'ldiring!!!</h2>
+  <form id="myForm" action="https://script.google.com/macros/s/AKfycbwknsqv87YL9I-mNRtwOa8Q0vWxoRQHRDSSFka0B7lU2iMrCogcUsnsQ7JWEXzO85xUMw/exec" method="post">
+
+      <label for="FirstName">F.I.O.</label>
+      <input type="text" id="firstName" name="FirstName" required>
+      <label for="LastName">Malumotingiz:</label>
+      <input type="text" id="lastName" name="LastName" required>
+
+
+      <label for="age">Telefon raqam:</label>
+      <input type="number" id="number" name="Number" required>
+
+      <label for="country">Tanlang:</label>
+      <select id="country" name="Country" >
+        <option value="">Sudlangan</option>
+        <option value="">Sudlanmagan</option>
+
+        <!-- Add more options here -->
+      </select>
+
+      
+    <input class="submitButton" type="submit" value="submit">
+  </form>
+</div>
+<!-- Modal HTML -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="modalMessage"></p>
+  </div>
+</div>
+
+<script src="js/Google sheet.js">
+</script>
+</body>
+</html>
