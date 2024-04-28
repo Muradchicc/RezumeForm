@@ -23,7 +23,7 @@ function showModal(message) {
     event.preventDefault(); // Prevent the default form submission
 
     // Show the modal immediately to indicate form submission is in progress
-    showModal("Submitting form...");
+    showModal("Ma'lumotlar yuklanmoqda...");
 
     // Perform an AJAX request to submit the form
     var xhr = new XMLHttpRequest();
